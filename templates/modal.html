@@ -1,0 +1,45 @@
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <h4 class="modal-title">{{type}} Review Predictions</h4>
+            </div>            <!-- /modal-header -->
+            <div class="modal-body">
+            <p class="lead"><span class="{{sentiment_img}}"></span> {{sentiment_txt}}</p>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{confidence}}" aria-valuemin="0" aria-valuemax="100" style="width: {{confidence}}%;">
+            {{confidence}}% Confidence
+            </div>
+            </div>
+            <table class="table table-condensed">
+                <tr>
+                    <th>Rating</th>
+                    <th>Probability</th>
+                </tr>
+                <tr id="1">
+                    <td><span class="glyphicon glyphicon-star"></span></td>
+                    <td>{{one}}</td>
+                </tr>
+                <tr id="2">
+                    <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></td>
+                    <td>{{two}}</td>
+                </tr>
+                <tr id="3">
+                    <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></td>
+                    <td>{{three}}</td>
+                </tr>
+                <tr id="4">
+                    <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></td>
+                    <td>{{four}}</td>
+                </tr>
+                <tr id="5">
+                    <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></td>
+                    <td>{{five}}</td>
+                </tr>
+            </table>
+
+            </div>            <!-- /modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Incorrect</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Correct</button>
+            </div>            <!-- /modal-footer -->
+            <script>$('#{{rating}}').addClass('info')</script>
