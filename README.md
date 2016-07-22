@@ -2,6 +2,7 @@ Sentiment Analysis of Amazon Product Reviews
 ==========
 
 Team: Jerry Chang, Michael Woo, Ace Eldeib
+
 CS51 Final Project, Spring 2014
 
 ## Description
